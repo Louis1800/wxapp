@@ -1,0 +1,8 @@
+<!--calendar.wxml-->
+<view class="container">
+  <view class="calendar-wrap">
+    <view class="calendar" wx:for="{{calendar}}">
+      <view class="spot {{item.active?'primary':'default'}} {{item.isnow?'now':''}}" wx:for="{{item}}">{{item.date}}</view>
+    </view>
+  </view>
+</view>

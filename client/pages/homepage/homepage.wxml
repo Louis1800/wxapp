@@ -1,0 +1,31 @@
+<!--homepage.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{info.avatar}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{info.name}}</text>
+  </view>
+  <view class="content">
+    <block wx:if="{{doc}}" wx:for="{{doc}}">
+      <view class="wrapper">
+        <view bindtap="unfold" class="section" data-id="{{index}}">{{item.ch + " / " + item.en}}</view>
+        <view hidden="{{item.show?false:true}}" bindtap="close" class="close">收起</view>
+        <view hidden="{{item.show?false:true}}" class="detail">
+          <view animation="{{animationData}}">
+            <view wx:for="{{item.more}}">
+              <view hidden="{{item.durantion?false:true}}" class="more-dura">{{item.durantion}}</view>
+              <view class="more-title">{{item.title}}</view>
+              <view class="more-desc">{{item.desc}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="info-wrap">
+    <view wx:for="{{tags}}" class="info">{{item}}</view>
+  </view>
+  <view class="contact" bindtap="callme">
+    <image src="{{info.call}}" mode="aspectFit" class="callicon"></image>
+  </view>
+  <navigator url="../calendar/calendar">跳转日历</navigator>
+</view>

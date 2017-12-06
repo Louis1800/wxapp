@@ -1,0 +1,55 @@
+
+.booklist{
+  width: 100%;
+  margin: 10px auto;
+  border-bottom: 4px solid sandybrown;
+  text-align: center;
+}
+
+.title{
+  margin: 20px auto;
+  font-size: 20px;
+}
+
+.author{
+  font-size: 12px;
+}
+
+.author::before{
+  content: "作者："
+}
+
+.article{
+  margin: 20px 20px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.subtitle{
+  font-weight: bold;
+}
+
+.text{
+  margin-top:10px; 
+}
+
+.end{
+  margin: 20px 20px;
+  font-size: 12px;
+}
+
+.user{
+  width: 100%;
+  background: #b0e2ff;
+  margin: 10px auto;
+}
+
+.usersinfo{
+  margin: 0 20px;
+  padding: 10px;
+  border-bottom: 1px solid sandybrown
+}
+
+.usersinfo:last-child{
+  border-bottom: none
+}

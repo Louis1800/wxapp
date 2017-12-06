@@ -1,0 +1,30 @@
+.calendar{
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.spot{
+  flex-basis: 24px;
+  flex-shrink: 1;
+  flex-grow: 1;
+   margin: 5px; 
+  display: inline-block; 
+  border-radius: 4px;
+  text-align: center;
+  line-height: 24px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.primary{
+  background-color: #00bfff;
+}
+
+.default{
+  background-color: #e8e8e8;
+}
+
+.now{
+  background-color: #1e90ff;
+}

@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/homepage/homepage",
+    "pages/catbox/catbox",
+    "pages/index/index",
+    "pages/addCgi/addCgi",
+    "pages/read/read",
+    "pages/calendar/calendar"
+  ],
+  "window":{
+    "backgroundColor":"#F6F6F6",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "盒子的盒子",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/homepage/homepage",
+        "text": "猫奴",
+        "iconPath": "/images/text.png",
+        "selectedIconPath": "/images/text_s.png"
+      },
+      {
+        "pagePath": "pages/catbox/catbox",
+        "text": "喵主子",
+        "iconPath": "/images/star.png",
+        "selectedIconPath": "/images/star_s.png"
+      },
+      {
+        "pagePath": "pages/read/read",
+        "text": "读取数据",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/index_s.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/phone.png",
+        "selectedIconPath": "/images/phone_s.png"
+      }
+    ],
+    "color": "#bfbfbf",
+    "selectedColor":"#08d00b"
+  }
+}

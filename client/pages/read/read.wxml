@@ -1,0 +1,19 @@
+<!-- read.wxml -->
+<view class="container">
+  <view class="booklist" wx:for="{{books}}">
+    <view class="title">{{item.title}}</view>
+    <text class="author" wx:for="{{item.alias}}"></text>
+    <view class="author">{{item.author}}</view>
+    <view class="article" wx:for="{{item.chapters}}">
+      <view class="subtitle">第{{index + 1}}章 {{item.subtitle}}</view>
+      <view class="text" wx:for="{{item.detail}}">{{item}}</view>
+    </view>
+    <view class="end">全书完</view>
+  </view>
+  <view class="user" wx:for="{{users}}">
+    <view class="usersinfo">微信id：{{item.wid}}</view>
+    <view class="usersinfo">昵称：{{item.nickname}}</view>
+    <view class="usersinfo">图书列表：{{item.booklist}}</view>
+    <view class="usersinfo">购物车：{{item.cart}}</view>
+  </view>
+</view>

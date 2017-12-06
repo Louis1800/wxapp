@@ -1,0 +1,54 @@
+/** catbox.wxss **/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 60rpx 0 20rpx 0;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #4f4f4f;
+}
+
+.info-wrap{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.info{
+  margin: 2px;
+  padding: 6px;
+  background-color: #e8e8e8;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.img-wrap{
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: stretch;
+  margin-top: 20px;
+}
+
+.img{
+  margin: 1px;
+  width: 48px;
+  height: 48px;
+}
+
+.selected{
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ff8c00;
+}

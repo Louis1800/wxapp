@@ -1,0 +1,19 @@
+<!--catbox.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{info.avatar}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{info.name}}</text>
+  </view>
+  <view class="img-wrap" bindtap="zoomin">
+    <block wx:for="{{imgs}}">
+    <!-- {{item}} -->
+       <image src="{{item}}" mode="aspectFill" data-src="{{item}}" class="{{select[index]?'img selected':'img'}}"></image> 
+    </block>
+  </view>
+  <view class="zoomin">
+    <image wx:if="{{curimg}}" src="{{curimg}}" mode="widthFix"></image>
+  </view>
+  <view class="info-wrap">
+    <view wx:for="{{info.tags}}" class="info">{{item}}</view>
+  </view>
+</view>
